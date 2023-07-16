@@ -2,11 +2,24 @@
   "name": "app",
   "private": "true",
   "dependencies": {
-    "@hotwired/stimulus": "^3.2.1",
-    "@hotwired/turbo-rails": "^7.3.0",
-    "esbuild": "^0.18.13"
+    "@types/jest": "^29.5.3",
+    "@types/node": "^20.4.2",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "dotenv": "^16.3.1",
+    "esbuild": "^0.18.13",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "remount": "^1.0.0",
+    "styled-components": "^6.0.4",
+    "typescript": "^5.1.6"
   },
   "scripts": {
-    "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds --public-path=/assets"
+    "build": "esbuild app/javascript/*.* --bundle --sourcemap --public-path=/assets --outdir=app/assets/builds"
+  },
+  "devDependencies": {
+    "@types/serve-handler": "^6.1.1",
+    "@types/styled-components": "^5.1.26",
+    "serve-handler": "^6.1.5"
   }
 }
